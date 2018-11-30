@@ -37,14 +37,14 @@ namespace WordCounter.Tests
     [TestMethod]
     public void FindMatchingWords_ReturnMatchesOfGivenString_string()
     {
-      string testString = "is there any one in there";
+      string testString = "is there any one in";
       string testWord = "there";
       List<string> testWordList = new List<string>{testWord};
       WordFinder newFinder = new WordFinder(testWord, testString);
 
       List<String> result = newFinder.FindMatchingWords();
 
-      CollectionAssert.AreEqual(testWordLis, result);
+      CollectionAssert.AreEqual(testWordList, result);
     }
     // [TestMethod]
     // public void RepeatCounter_ReturnCorrectNumberOfInstancesOfGivenWordInString_int()
