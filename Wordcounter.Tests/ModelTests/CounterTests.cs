@@ -21,17 +21,18 @@ namespace WordCounter.Tests
       Assert.AreEqual(true, result);
     }
 
-    // [TestMethod]
-    // public void WordCompare_ReturnComparisonOfTthreeLetterString_true()
-    // {
-    //   string threeWordTestString = "cat";
-    //   string threeWordTestWord = "cat";
-    //   WordFinder newFinder = new WordFinder (twoWordTestWord, twoWordTestString);
-    //
-    //   string result = newFinder.WordCompare(threeWordTestString);
-    //
-    //   Assert.AreEqual(true, result);
-    // }
+    [TestMethod]
+    public void WordCompare_ReturnComparisonOfTthreeLetterString_true()
+    {
+      string threeWordTestString = "Cat";
+      string threeWordTestWord = "cat";
+
+      WordFinder newFinder = new WordFinder (threeWordTestWord, threeWordTestString);
+    
+      bool result = newFinder.WordCompare(threeWordTestString);
+
+      Assert.AreEqual(true, result);
+    }
 
     // [TestMethod]
     // public void ElementCompare_ReturnIndexOfGivenString_True()
