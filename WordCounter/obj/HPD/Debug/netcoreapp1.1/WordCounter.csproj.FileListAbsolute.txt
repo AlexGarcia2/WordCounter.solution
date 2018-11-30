@@ -1,0 +1,14 @@
+C:\Users\earlene\Desktop\wordcounter\WordCounter\bin\HPD\Debug\netcoreapp1.1\WordCounter.deps.json
+C:\Users\earlene\Desktop\wordcounter\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.csproj.CoreCompileInputs.cache
+C:\Users\earlene\Desktop\wordcounter\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.AssemblyInfo.cs
+C:\Users\earlene\Desktop\wordcounter\WordCounter\bin\HPD\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\earlene\Desktop\wordcounter\WordCounter\bin\HPD\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\earlene\Desktop\wordcounter\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\earlene\Desktop\wordcounter\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\earlene\desktop\WordCounter.Solution\WordCounter\bin\HPD\Debug\netcoreapp1.1\WordCounter.deps.json
+C:\Users\earlene\desktop\WordCounter.Solution\WordCounter\bin\HPD\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\earlene\desktop\WordCounter.Solution\WordCounter\bin\HPD\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\earlene\desktop\WordCounter.Solution\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.csproj.CoreCompileInputs.cache
+C:\Users\earlene\desktop\WordCounter.Solution\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.AssemblyInfo.cs
+C:\Users\earlene\desktop\WordCounter.Solution\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\earlene\desktop\WordCounter.Solution\WordCounter\obj\HPD\Debug\netcoreapp1.1\WordCounter.pdb
