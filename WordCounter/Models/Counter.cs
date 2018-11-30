@@ -17,11 +17,11 @@ namespace WordCounter.Models
     {
       return _inputWord;
     }
-    public string SetInputWord(string newInputWord)
+    public void SetInputWord(string newInputWord)
     {
        _inputWord = newInputWord;
     }
-  
+
     public bool WordCompare(string wordInSentence)
     {
       if(_inputWord.ToLower() == wordInSentence.ToLower())

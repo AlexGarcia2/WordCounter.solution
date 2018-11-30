@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using WordCounter.Models;
 using System.Collections.Generic;
 
 namespace WordCounter.Controllers
@@ -13,7 +13,7 @@ namespace WordCounter.Controllers
       return View();
     }
     [HttpGet("/wordCounter/new")]
-    public ActionResult new()
+    public ActionResult New()
     {
 
       return View();
@@ -27,5 +27,5 @@ namespace WordCounter.Controllers
 
   }
 
-}
+ 
 }
