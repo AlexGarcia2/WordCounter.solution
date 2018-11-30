@@ -1,26 +1,21 @@
 using WordCounter.Models;
 <!DOCTYPE html>
-<h
-<h2>City List</h2>
-<ul>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Hello friend!</title>
+  </head>
+  <body>
+    <h2>City List</h2>
+    <ul>
 
-@foreach (WordFinder item in Model)
-  {
-    <li>@WordFinder.FindMatchingWords()</li>
-  }
-}
+    @foreach (WordFinder item in Model)
+      {
+        <li>@item.FindMatchingWords()</li>
+      }
+    }
 
-</ul>
-<a href="/wordCounter/new">Add new city</a>
-
-
-
-
-
-
-
-
-
-
-
-//<a href='/wordCounter/@.GetId()'>@WordFinder.Get()</a>
+    </ul>
+    <a href="/wordCounter/new">Add new city</a>
+  </body>
+</html>
