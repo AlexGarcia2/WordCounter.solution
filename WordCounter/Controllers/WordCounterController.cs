@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 namespace WordCounter.Controllers
 {
-  public class WorCounterController : Controller
+  public class WordCounterController : Controller
   {
     [HttpGet("/wordCounter")]
     public ActionResult Index()
     {
 
-      return View();
+      return View("people");
     }
     [HttpGet("/wordCounter/new")]
     public ActionResult New()
@@ -21,11 +21,12 @@ namespace WordCounter.Controllers
     [HttpPost("/wordCounter")]
     public ActionResult Create(string inputWord, string inputstring)
     {
+
     WordFinder newWordFinder = new WordFinder(inputWord, inputstring);
-    return RedirectToAction("Index");
+    return View();
     }
 
   }
 
- 
+
 }
