@@ -35,7 +35,21 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void FindMatchingWords_ReturnMatchesOfGivenString_string()
+    public void FindMatchingWords_ReturnEmpty_list()
+    {
+      var testWord = "";
+      var testList = "";
+
+      List<string> testWordList = new List<string>{};
+
+      WordFinder newFinder = new WordFinder(testWord, testList);
+
+      List<String> result = newFinder.FindMatchingWords();
+
+      CollectionAssert.AreEqual(testWordList, result);
+    }
+    [TestMethod]
+    public void FindMatchingWords_ReturnMatchesOfGivenString_list()
     {
       string testString = "is there any one in";
       string testWord = "there";
