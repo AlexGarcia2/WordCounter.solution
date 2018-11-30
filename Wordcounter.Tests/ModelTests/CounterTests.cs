@@ -28,23 +28,23 @@ namespace WordCounter.Tests
       string threeWordTestWord = "cat";
 
       WordFinder newFinder = new WordFinder (threeWordTestWord, threeWordTestString);
-    
+
       bool result = newFinder.WordCompare(threeWordTestString);
 
       Assert.AreEqual(true, result);
     }
 
-    // [TestMethod]
-    // public void ElementCompare_ReturnIndexOfGivenString_True()
-    // {
-    //   string testString = "is there any one in there";
-    //   string testWord = "there";
-    //   WordFinder newFinder = new WordFinder(testWord, testString);
-    //
-    //   bool result = newFinder.ElementCompar();
-    //
-    //   Assert.AreEqual(true, result);
-    // }
+    [TestMethod]
+    public void FindMatchingWords_ReturnMatchesOfGivenString_string()
+    {
+      string testString = "is there any one in there";
+      string testWord = "there";
+      WordFinder newFinder = new WordFinder(testWord, testString);
+
+      List<String> result = newFinder.FindMatchingWords();
+
+      Assert.AreEqual(testWord, result);
+    }
     // [TestMethod]
     // public void RepeatCounter_ReturnCorrectNumberOfInstancesOfGivenWordInString_int()
     // {
