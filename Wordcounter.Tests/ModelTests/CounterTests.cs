@@ -37,14 +37,14 @@ namespace WordCounter.Tests
     [TestMethod]
     public void FindMatchingWords_ReturnEmpty_list()
     {
-      var testWord = "";
-      var testList = "";
-
+      string threeWordTestString = "";
+      string threeWordTestWord = "";
       List<string> testWordList = new List<string>{};
 
-      WordFinder newFinder = new WordFinder(testWord, testList);
+      WordFinder newFinder = new WordFinder(threeWordTestWord,threeWordTestString);
 
-      List<String> result = newFinder.FindMatchingWords();
+      List<string> result = newFinder.FindMatchingWords();
+      Console.WriteLine(result);
 
       CollectionAssert.AreEqual(testWordList, result);
     }
