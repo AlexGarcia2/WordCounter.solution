@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using Wordcounter.Controllers;
+using WordCounter.Controllers;
 using WordCounter.Models;
 
 namespace Wordcounter.Tests
