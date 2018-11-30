@@ -10,7 +10,7 @@ namespace WordCounter.Controllers
     public ActionResult Index()
     {
 
-      return View("people");
+      return View();
     }
     [HttpGet("/wordCounter/new")]
     public ActionResult New()
