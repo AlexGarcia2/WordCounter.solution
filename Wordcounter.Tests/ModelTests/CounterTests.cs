@@ -33,7 +33,7 @@ namespace WordCounter.Tests
 
       Assert.AreEqual(true, result);
     }
-
+// ned to fix element problem by monday.
     [TestMethod]
     public void FindMatchingWords_ReturnEmpty_list()
     {
@@ -60,16 +60,16 @@ namespace WordCounter.Tests
 
       CollectionAssert.AreEqual(testWordList, result);
     }
-    // [TestMethod]
-    // public void RepeatCounter_ReturnCorrectNumberOfInstancesOfGivenWordInString_int()
-    // {
-    //   string testString = "is there any one in there";
-    //   string testWord = "there";
-    //   WordFinder newFinder = new WordFinder(testWord, testString);
-    //
-    //   int result = newFinder.RepeatCounter();
-    //
-    //   Assert.AreEqual(2, result);
-    // }
+    [TestMethod]
+    public void RepeatCounter_ReturnCorrectNumberOfInstancesOfGivenWordInString_int()
+    {
+      string testString = "is there any one in there";
+      string testWord = "there";
+      WordFinder newFinder = new WordFinder(testWord, testString);
+
+      int result = newFinder.RepeatCounter();
+
+      Assert.AreEqual(2, result);
+    }
   }
 }
