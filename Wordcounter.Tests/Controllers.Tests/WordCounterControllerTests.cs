@@ -38,18 +38,18 @@ namespace Wordcounter.Tests
       //Assert
       Assert.AreEqual(result, "Index");
   }
-//   // test for the data type for controller
-//   [TestMethod]
-//     public void Create_ReturnsCorrectActionType_RedirectToActionResult()
-//     {
-//         //Arrange
-//         CitiesController controller = new CitiesController();
-//
-//         //Act
-//         IActionResult view = controller.Create("Walk the dog","this","that");
-//
-//         //Assert
-//         Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
-//     }
+  // test for the data type for controller
+  [TestMethod]
+    public void Create_ReturnsCorrectActionType_RedirectToActionResult()
+    {
+        //Arrange
+        WordCounterController controller = new WordCounterController();
+
+        //Act
+        IActionResult view = controller.Create("to","to be or not to be ");
+
+        //Assert
+        Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
+    }
   }
 }
