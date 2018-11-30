@@ -39,11 +39,12 @@ namespace WordCounter.Tests
     {
       string testString = "is there any one in there";
       string testWord = "there";
+      List<string> testWordList = new List<string>{testWord};
       WordFinder newFinder = new WordFinder(testWord, testString);
 
       List<String> result = newFinder.FindMatchingWords();
 
-      Assert.AreEqual(testWord, result);
+      CollectionAssert.AreEqual(testWordLis, result);
     }
     // [TestMethod]
     // public void RepeatCounter_ReturnCorrectNumberOfInstancesOfGivenWordInString_int()
