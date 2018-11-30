@@ -1,0 +1,11 @@
+using WordCounter.Models;
+<h2>City List</h2>
+<ul>
+
+    /* foreach City Information inside the model */
+    <li><a href='/Cities/@city.GetId()'>@city.GetCityName()</a></li>
+    /* getId grabs _id */
+
+
+</ul>
+<a href="/wordCounter/new">Add new city</a>

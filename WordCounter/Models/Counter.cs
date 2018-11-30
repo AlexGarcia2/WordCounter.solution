@@ -13,6 +13,15 @@ namespace WordCounter.Models
       _inputWord = inputWord;
       _inputString = inputString;
     }
+    public string GetInputWord()
+    {
+      return _inputWord;
+    }
+    public string SetInputWord(string newInputWord)
+    {
+       _inputWord = newInputWord;
+    }
+  
     public bool WordCompare(string wordInSentence)
     {
       if(_inputWord.ToLower() == wordInSentence.ToLower())

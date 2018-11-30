@@ -18,6 +18,12 @@ namespace WordCounter.Controllers
 
       return View();
     }
+    [HttpPost("/wordCounter")]
+    public ActionResult Create(string inputWord, string inputstring)
+    {
+    WordFinder newWordFinder = new WordFinder(inputWord, inputstring);
+    return RedirectToAction("Index");
+    }
 
   }
 
