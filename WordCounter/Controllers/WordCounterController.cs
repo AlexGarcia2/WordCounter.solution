@@ -9,6 +9,7 @@ namespace WordCounter.Controllers
     [HttpGet("/wordCounter")]
     public ActionResult Index()
     {
+      // WordFinder newWordFinder = WordFinder()
 
       return View();
     }

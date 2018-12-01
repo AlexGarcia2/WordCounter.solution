@@ -1,21 +1,13 @@
-using WordCounter.Models;
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Hello friend!</title>
+    <title>Word Results</title>
   </head>
   <body>
-    <h2>City List</h2>
-    <ul>
-
-
-
-        <li>@Model.FindMatchingWords()</li>
-
-
-
-    </ul>
-    <a href="/wordCounter/new">Add new city</a>
+    <h2>@Model.GetInputWord() repeated</h2>
+    <p> </p>
+    <a href="/wordCounter/new">Add a comparison</a>
   </body>
 </html>
