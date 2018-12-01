@@ -9,11 +9,11 @@ using WordCounter.Models;
     <h2>City List</h2>
     <ul>
 
-    @foreach (WordFinder item in Model)
-      {
-        <li>@item.FindMatchingWords()</li>
-      }
-    }
+
+
+        <li>@WordFinder.FindMatchingWords()</li>
+
+
 
     </ul>
     <a href="/wordCounter/new">Add new city</a>
