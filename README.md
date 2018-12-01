@@ -1,6 +1,6 @@
 # _WordCounter_
 
-#### _An appilcation for finding words, 11.08.2018_
+#### _An appilcation for finding words, 11.30.2018_
 
 #### By ** _Alex Garcia_**
 
@@ -18,30 +18,43 @@ _download source code from Github need a dotnet and c# compiler to run test and 
 
 ## Specifications
 
+  [model test]
+
 * check to see if one letter are the same.
-  * Example Input: i & i
+  * Example Input: A & A
       * Example Output: true
 
-* be able to compare if two letter word given are the same.
-    * Example Input:  hi and in
+* be able to compare if word  given can be matched if there is a capital letter in the word.
+    * Example Input:  cat and Cat
       * Example Output: false words dont equal each other
 
-* be able to find and match a two letter word to a tring of words.
-    * Example Input: hi and " hi class we are learning today"
-      * Example Output: hi and hi should match and return true
+* be able to see if an empty list can be given back.
+    * Example Input: List<string>{}
+      * Example Output: true
 
-* be able to match elements to elements in a string, but not elements that contain letters of the first element in it .
+* be able to match a word that is given to words in a sentence .
     * Example Input:"to"/ "people love to look at small things together"
       * Example Output: output of true if element is found in string
 
-* able to tell how man times a word is used in string.
+* find how many times a given word is repeated in a given sentence .
     * Example Input: "people go to work an then go home"
     * example Input: "go"
-      * Example Output: go appears twice
+      * Example Output: go appears twice (2)
 
-* .
-    * Example Input:
-      * Example Output:
+    [controller test]  
+
+* find if the controller is passing through the right Action type.
+    * Example Input: Index
+      * Example Output: Index
+
+*  find if the controller passes through the correct model data type
+    * Example Input: list<string>
+      * Example Output:List<string>
+* find if the controller can pass the correct data type
+      * Example Input: RedirectToActionResult
+        * Example Output: RedirectToActionResult
+
+
 
 
 ## Support and Contact Details
@@ -50,7 +63,7 @@ _If you discover a bug or want to make a suggestion or comment, send us an email
 
 ## Technologies Used
 
-_This application uses dotnet, c#._
+_This application uses dotnet, c# , mvc, razor_
 
 ### License
 
