@@ -23,7 +23,7 @@ namespace WordCounter.Controllers
     {
 
     WordFinder newWordFinder = new WordFinder(inputWord, inputstring);
-    return RedirectToAction("Index");
+    return RedirectToAction("Index", newWordFinder);
     }
 
   }
