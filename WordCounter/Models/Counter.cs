@@ -7,6 +7,7 @@ namespace WordCounter.Models
   {
     private string _inputWord;
     private string _inputString;
+  
 
     public WordFinder (string inputWord , string inputString)
     {

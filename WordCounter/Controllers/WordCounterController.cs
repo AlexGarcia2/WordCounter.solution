@@ -21,7 +21,7 @@ namespace WordCounter.Controllers
     [HttpPost("/wordCounter")]
     public ActionResult Create(string inputWord, string inputString)
     {
-
+    
       WordFinder newWordFinder = new WordFinder(inputWord,inputString);
 
 
