@@ -1,4 +1,4 @@
-
+using WordCounter.Models;
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,8 +6,8 @@
     <title>Word Results</title>
   </head>
   <body>
-    <h2>@Model.GetInputWord() repeated</h2>
-    <p> </p>
+    <h2>@Model.WordFinder.GetInputWord() repeated</h2>
+    <p>@Model.GetInputWord() repeated: @Model.ReapeatCounter() times</p>
     <a href="/wordCounter/new">Add a comparison</a>
   </body>
 </html>

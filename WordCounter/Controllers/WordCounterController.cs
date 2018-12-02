@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using WordCounter.Models;
 using System.Collections.Generic;
+using System;
+using WordCounter.Models;
 
 namespace WordCounter.Controllers
 {
@@ -9,8 +10,6 @@ namespace WordCounter.Controllers
     [HttpGet("/wordCounter")]
     public ActionResult Index()
     {
-      // WordFinder newWordFinder = WordFinder()
-
       return View();
     }
     [HttpGet("/wordCounter/new")]
@@ -20,11 +19,13 @@ namespace WordCounter.Controllers
       return View();
     }
     [HttpPost("/wordCounter")]
-    public ActionResult Create(string inputWord, string inputstring)
+    public ActionResult Create(string inputWord, string inputString)
     {
 
-    WordFinder newWordFinder = new WordFinder(inputWord, inputstring);
-    return RedirectToAction("Index", newWordFinder);
+      WordFinder newWordFinder = new WordFinder(inputWord,inputString);
+
+
+      return RedirectToAction("Index",newWordFinder);
     }
 
   }
