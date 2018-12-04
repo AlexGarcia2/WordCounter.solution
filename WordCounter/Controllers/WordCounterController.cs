@@ -21,11 +21,11 @@ namespace WordCounter.Controllers
     [HttpPost("/wordCounter")]
     public ActionResult Create(string inputWord, string inputString)
     {
-    
+
       WordFinder newWordFinder = new WordFinder(inputWord,inputString);
+      List<string> newStringList = newWordFinder.FindMatchingWords();
 
-
-      return RedirectToAction("Index",newWordFinder);
+      return View("Index",newStringList);
     }
 
   }
