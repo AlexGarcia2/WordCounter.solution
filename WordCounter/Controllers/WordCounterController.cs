@@ -23,9 +23,8 @@ namespace WordCounter.Controllers
     {
 
       WordFinder newWordFinder = new WordFinder(inputWord,inputString);
-      List<string> newStringList = newWordFinder.FindMatchingWords();
 
-      return View("Index",newStringList);
+      return View("Index" ,newWordFinder);
     }
 
   }
