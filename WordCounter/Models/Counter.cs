@@ -7,6 +7,8 @@ namespace WordCounter.Models
   {
     private string _inputWord;
     private string _inputString;
+    private List<string> _result;
+    private List<string> _wordCount;
 
 
     public WordFinder (string inputWord , string inputString)
@@ -23,6 +25,25 @@ namespace WordCounter.Models
        _inputWord = newInputWord;
     }
 
+    public string GetResult()
+    {
+      return _result;
+    }
+
+    public void SetResult(string newResult)
+    {
+       _result = newResult;
+    }
+
+    public string GetCount()
+    {
+      return _wordCount;
+    }
+    public void SetCount(string newCount)
+    {
+       _wordCount = newCount;
+    }
+
     public bool WordCompare(string wordInSentence)
     {
       if(_inputWord.ToLower() == wordInSentence.ToLower())
@@ -36,7 +57,7 @@ namespace WordCounter.Models
     }
     public List<string> FindMatchingWords()
     {
-      List<string> result = new List<string>{};
+
       string[] array_inputString = _inputString.Split(' ');
 
       foreach (string word in array_inputString)
@@ -52,8 +73,8 @@ namespace WordCounter.Models
 
     public int RepeatCounter()
     {
-      List<string> result = FindMatchingWords();
-      int count = result.Count;
+      _wordCount = FindMatchingWords();
+      int count = wordCount.Count;
       return count;
     }
   }
