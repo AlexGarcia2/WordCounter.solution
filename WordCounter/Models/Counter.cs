@@ -7,13 +7,14 @@ namespace WordCounter.Models
   {
     private string _inputWord;
     private string _inputString;
-    public List<string> words { get; set; }
+    public List<string> _words;
 
 
-    public WordFinder (string inputWord , string inputString)
+    public WordFinder (string inputWord , string inputString, List<string> words)
     {
       _inputWord = inputWord;
       _inputString = inputString;
+      _words = words;
     }
     public string GetInputWord()
     {
@@ -48,7 +49,7 @@ namespace WordCounter.Models
           result.Add(word);
         }
       }
-      this.words = result;
+        words = result;
 
       int output = this.RepeatCounter();
 
