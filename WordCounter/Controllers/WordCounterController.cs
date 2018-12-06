@@ -19,12 +19,12 @@ namespace WordCounter.Controllers
       return View();
     }
     [HttpPost("/wordCounter")]
-    public ActionResult Create(string inputWord, string inputString, List<string> newResult, List<int> newCount)
+    public ActionResult Create(string inputWord, string inputSentence)
     {
 
-      WordFinder newWordFinder = new WordFinder(inputWord, inputString, newResult, newCount);
+      WordFinder newWordFinder = new WordFinder(inputWord, inputSentence);
 
-      return View("Index" ,newWordFinder);
+      return View("Index", newWordFinder);
     }
 
   }
