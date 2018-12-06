@@ -49,7 +49,7 @@ namespace WordCounter.Models
           result.Add(word);
         }
       }
-        words = result;
+        gwords = result;
 
       int output = this.RepeatCounter();
 
