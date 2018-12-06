@@ -8,13 +8,15 @@ namespace WordCounter.Models
     private string _inputWord;
     private string _inputString;
     private List<string> _result;
-    private List<string> _wordCount;
+    private List<int> _wordCount;
 
 
-    public WordFinder (string inputWord , string inputString)
+    public WordFinder (string newInputWord, string newInputString, List<string> newResult, List<int> newCount)
     {
-      _inputWord = inputWord;
-      _inputString = inputString;
+      _inputWord = newInputWord;
+      _inputString = newInputString;
+      _result = newResult;
+      _wordCount = newCount;
     }
     public string GetInputWord()
     {
@@ -25,21 +27,21 @@ namespace WordCounter.Models
        _inputWord = newInputWord;
     }
 
-    public string GetResult()
+    public List<string> GetResult()
     {
       return _result;
     }
 
-    public void SetResult(string newResult)
+    public void SetResult(List<string> newResult)
     {
        _result = newResult;
     }
 
-    public string GetCount()
+    public List<int> GetCount()
     {
       return _wordCount;
     }
-    public void SetCount(string newCount)
+    public void SetCount(List<int> newCount)
     {
        _wordCount = newCount;
     }
@@ -55,9 +57,9 @@ namespace WordCounter.Models
         return false;
       }
     }
-    public List<string> FindMatchingWords()
+    public List<string> FindMatchingWords(List<string> newResult)
     {
-
+      List<string> result = new List<string>{};
       string[] array_inputString = _inputString.Split(' ');
 
       foreach (string word in array_inputString)
@@ -65,17 +67,19 @@ namespace WordCounter.Models
         bool isAMatch = WordCompare(word);
         if(isAMatch)
         {
-          result.Add(word);
+         result.Add(word);
         }
       }
       return result;
     }
 
-    public int RepeatCounter()
-    {
-      _wordCount = FindMatchingWords();
-      int count = wordCount.Count;
-      return count;
-    }
+    // public int RepeatCounter()
+    // {
+    //   List<int> wordCount = new List<int>{};
+    //   wordCount = FindMatchingWords();
+    //   int count = wordCount.Count;
+    //    wordCount.Add(count);
+    //    return wordCount;
+    // }
   }
 }
