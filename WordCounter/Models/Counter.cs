@@ -49,7 +49,7 @@ namespace WordCounter.Models
           result.Add(word);
         }
       }
-        gwords = result;
+        _words = result;
 
       int output = this.RepeatCounter();
 
@@ -58,7 +58,7 @@ namespace WordCounter.Models
 
     public int RepeatCounter()
     {
-      List<string> result = this.words;
+      List<string> result = _words;
       int count = result.Count;
       return count;
     }
