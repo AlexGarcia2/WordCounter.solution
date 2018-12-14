@@ -25,31 +25,32 @@ namespace Wordcounter.Tests
 
 //test the action of the Controller
     [TestMethod]
-  public void Create_RedirectsToCorrectAction_Index()
-  {
-      //Arrange
-      WordCounterController controller = new WordCounterController();
+      public void Create_viewtoindex_Index()
+      {
+        //Arrange
+        List<string> emptyList = new List<string>{};
+        WordCounterController controller = new WordCounterController();
+        ViewResult actionResult = controller.Create("to","to be or not to be ",emptyList) as ViewResult;
 
-      RedirectToActionResult actionResult = controller.Create("to","to be or not to be ") as RedirectToActionResult;
+        //Act
+        string result = actionResult.ViewName;
 
-      //Act
-      string result = actionResult.ActionName;
+        //Assert
+        Assert.AreEqual(result, "Index");
+      }
 
-      //Assert
-      Assert.AreEqual(result, "Index");
-  }
   // test for the data type for controller
   [TestMethod]
-    public void Create_ReturnsCorrectActionType_RedirectToActionResult()
+    public void Create_ReturnsCorrectActionType_ViewResult()
     {
         //Arrange
         WordCounterController controller = new WordCounterController();
-
+        List<string> emptyList = new List<string>{};
         //Act
-        IActionResult view = controller.Create("to","to be or not to be ");
+        IActionResult view = controller.Create("to","to be or not to be ",emptyList);
 
         //Assert
-        Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
+        Assert.IsInstanceOfType(view, typeof(ViewResult));
     }
   }
 }
